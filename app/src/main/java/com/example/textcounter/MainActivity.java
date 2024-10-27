@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         Spinner spinner = (Spinner) findViewById(R.id.spCountOptions);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-               this,
+                this,
                 R.array.counting_options,
                 android.R.layout.simple_spinner_item
 
@@ -33,4 +33,6 @@ public class MainActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
     }
+
+
 }
