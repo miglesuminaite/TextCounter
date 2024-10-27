@@ -1,8 +1,11 @@
 package com.example.textcounter;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +14,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText edUserInput;
+    private TextView tvResult;
+    private Spinner spCountOptions;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +31,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Spinner spinner = (Spinner) findViewById(R.id.spCountOptions);
+        this.edUserInput = findViewById(R.id.edUserInput);
+        this.tvResult = findViewById(R.id.tvResult);
+
+        this.spCountOptions = findViewById(R.id.spCountOptions);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this,
                 R.array.counting_options,
@@ -31,8 +42,10 @@ public class MainActivity extends AppCompatActivity {
 
         );
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+        spCountOptions.setAdapter(adapter);
     }
 
+    public void onBtnCountClick(View view) {
 
+    }
 }
