@@ -13,6 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.textcounter.utils.TextCounter;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText edUserInput;
@@ -47,5 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBtnCountClick(View view) {
         String userInputPhrase = this.edUserInput.getText().toString();
+        int result = TextCounter.getCharsCount(userInputPhrase);
     }
 }
