@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TextCounter</string>
+    <string-array name="counting_options">
+        <item>Chars</item>
+        <item>Words</item>
+    </string-array>
 </resources>
