@@ -50,5 +50,6 @@ public class MainActivity extends AppCompatActivity {
     public void onBtnCountClick(View view) {
         String userInputPhrase = this.edUserInput.getText().toString();
         int result = TextCounter.getCharsCount(userInputPhrase);
+        this.tvResult.setText(String.valueOf(result));
     }
 }
