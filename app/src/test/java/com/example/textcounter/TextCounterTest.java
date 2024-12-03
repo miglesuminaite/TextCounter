@@ -42,5 +42,12 @@ public class TextCounterTest {
         assertEquals(0, result);
     }
 
+    @Test
+    public void testGetWordsCount_normalText() {
+        String input = "Hello World!";
+        int result = TextCounter.getWordsCount(input);
+        assertEquals(2, result);
+    }
+
 
 }
