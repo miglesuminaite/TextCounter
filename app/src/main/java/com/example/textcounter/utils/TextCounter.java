@@ -7,7 +7,7 @@ public class TextCounter {
     }
 
     public static int getWordsCount(String inputPhrase){
-        if (inputPhrase.isEmpty()) {
+        if (inputPhrase.trim().isEmpty()) {
             return 0;
         }
 
