@@ -14,6 +14,14 @@ public class TextCounterTest {
         assertEquals(0, result);
     }
 
+    @Test
+    public void testGetCharsCount_spacesOnly() {
+        String input = "     ";
+        int result = TextCounter.getCharsCount(input);
+        assertEquals(5, result);
+    }
+
+
 
 
 }
