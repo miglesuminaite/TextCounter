@@ -35,5 +35,12 @@ public class TextCounterTest {
         assertEquals(0, result);
     }
 
+    @Test
+    public void testGetWordsCount_spacesOnly() {
+        String input = "     ";
+        int result = TextCounter.getWordsCount(input);
+        assertEquals(0, result);
+    }
+
 
 }
