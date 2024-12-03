@@ -21,6 +21,12 @@ public class TextCounterTest {
         assertEquals(5, result);
     }
 
+    @Test
+    public void testGetCharsCount_normalText() {
+        String input = "Hello World!";
+        int result = TextCounter.getCharsCount(input);
+        assertEquals(12, result);
+    }
 
 
 
