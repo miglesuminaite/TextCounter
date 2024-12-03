@@ -49,5 +49,11 @@ public class TextCounterTest {
         assertEquals(2, result);
     }
 
+    @Test
+    public void testGetWordsCount_textWithTabs() {
+        String input = "Hello\tWorld!";
+        int result = TextCounter.getWordsCount(input);
+        assertEquals(2, result);
+    }
 
 }
