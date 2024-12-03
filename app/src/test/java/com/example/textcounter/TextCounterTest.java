@@ -28,6 +28,12 @@ public class TextCounterTest {
         assertEquals(12, result);
     }
 
+    @Test
+    public void testGetWordsCount_emptyString() {
+        String input = "";
+        int result = TextCounter.getWordsCount(input);
+        assertEquals(0, result);
+    }
 
 
 }
